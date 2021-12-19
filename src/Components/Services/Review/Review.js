@@ -13,7 +13,7 @@ const Review = () => {
             description: data.description,
             imageURL: imageURL
         }
-        fetch('https://lit-earth-86489.herokuapp.com/addReview', {
+        fetch('https://obscure-bayou-25032.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

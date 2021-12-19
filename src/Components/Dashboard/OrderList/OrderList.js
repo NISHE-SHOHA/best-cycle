@@ -7,13 +7,13 @@ const OrderList = () => {
     const [Order, setOrder] = useState({});
 
     useEffect(() => {
-        fetch('https://lit-earth-86489.herokuapp.com/orders')
+        fetch('https://obscure-bayou-25032.herokuapp.com/orders')
         .then(response => response.json())
         .then(data => setOrders(data))
     }, [])
 
     const loadOrder = (id) => {
-        fetch(`https://lit-earth-86489.herokuapp.com/order/${id}`)
+        fetch(`https://obscure-bayou-25032.herokuapp.com/order/${id}`)
         .then(response => response.json())
         .then(data => {
             setOrder(data)
@@ -22,7 +22,7 @@ const OrderList = () => {
 
     const updateOrder = (id, status) => {
         const order = {id, status}
-        fetch(`https://lit-earth-86489.herokuapp.com/update/${id}`, {
+        fetch(`https://obscure-bayou-25032.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'

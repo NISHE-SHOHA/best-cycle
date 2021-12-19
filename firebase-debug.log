@@ -1,0 +1,47 @@
+[debug] [2021-12-19T16:27:46.477Z] ----------------------------------------------------------------------
+[debug] [2021-12-19T16:27:46.479Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2021-12-19T16:27:46.479Z] CLI Version:   9.21.0
+[debug] [2021-12-19T16:27:46.479Z] Platform:      win32
+[debug] [2021-12-19T16:27:46.479Z] Node Version:  v14.17.4
+[debug] [2021-12-19T16:27:46.480Z] Time:          Sun Dec 19 2021 22:27:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-12-19T16:27:46.480Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-19T16:27:46.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-19T16:27:46.532Z] > authorizing via signed-in user (mstnishi483@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\web-develop\best-cycle-main\best-cycle-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using best-cycle. 
+[debug] [2021-12-19T16:27:50.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/best-cycle [none]
+[debug] [2021-12-19T16:27:50.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/best-cycle 403
+[debug] [2021-12-19T16:27:50.737Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/best-cycle {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-12-19T16:27:50.737Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-12-19T16:27:50.922Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project best-cycle. Please make sure the project exists and your account has permission to access it.

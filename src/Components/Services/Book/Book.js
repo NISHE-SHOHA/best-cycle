@@ -12,7 +12,7 @@ const Book = ({service}) => {
         status: 'Pending',
         orderTime: new Date()
         }
-        fetch('https://lit-earth-86489.herokuapp.com/addBook', {
+        fetch('https://obscure-bayou-25032.herokuapp.com/addBook', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
